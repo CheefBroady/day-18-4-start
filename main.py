@@ -1,13 +1,28 @@
 import turtle as t
-from turtle import Screen
 import random
 
 tim = t.Turtle()
+rand = random
+screen = t.Screen()
+walk = True
+counter = 0
 
 ########### Challenge 4 - Random Walk ########
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray",
-           "SeaGreen"]
+           "SeaGreen", "brown", "coral", "DarkSalmon", "DeepSkyBlue"]
+
+direction = [tim.forward(15), tim.left(15), tim.right(15)]
 
 
-tim.forward(150)
-tim.color(random(colours))
+while walk:
+    tim.color(colours[rand.randint(0, 10)])
+    rand.random(direction)
+    # tim.speed(speed="slow")
+    # random(direction)
+    counter += 1
+    if counter == 15:
+        walk = False
+
+
+
+screen.exitonclick()
