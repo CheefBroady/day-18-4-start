@@ -16,13 +16,14 @@ direction = [tim.forward(15), tim.left(15), tim.right(15)]
 
 while walk:
     tim.color(colours[rand.randint(0, 10)])
-    rand.random(direction)
+    # rand.random(direction)
     # tim.speed(speed="slow")
     # random(direction)
     counter += 1
     if counter == 15:
         walk = False
 
-
+# es wird etwas im master-branch hinzugefügt
+print("man ist das cool")
 
 screen.exitonclick()
