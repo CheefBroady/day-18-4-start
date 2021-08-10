@@ -1,6 +1,8 @@
 import turtle as t
 import random
 
+
+
 tim = t.Turtle()
 rand = random
 screen = t.Screen()
