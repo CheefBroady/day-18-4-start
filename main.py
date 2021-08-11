@@ -14,15 +14,22 @@ colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSea
            "SeaGreen", "brown", "coral", "DarkSalmon", "DeepSkyBlue"]
 
 direction = [tim.forward(15), tim.left(15), tim.right(15)]
-
+variation = [1, 2, 3]
 
 while walk:
-    tim.color(colours[rand.randint(0, 10)])
+    tim.color(rand.choice(colours))
+    intvariation = rand.choice(variation)
+    if intvariation == 1:
+        tim.forward(15)
+    elif intvariation == 2:
+        tim.left(15)
+    else:
+        tim.right(15)
     # rand.random(direction)
     # tim.speed(speed="slow")
     # random(direction)
     counter += 1
-    if counter == 15:
+    if counter == 150:
         walk = False
 
 # do anything this evening, 10. August 2021
