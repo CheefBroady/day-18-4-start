@@ -10,20 +10,8 @@ screen = t.Screen()
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray",
            "SeaGreen", "brown", "coral", "DarkSalmon", "DeepSkyBlue"]
 
-# direction = {1: 'tim.forward(10)', 2: 'tim.left(10)', 3: 'tim.right(10)'}
-# variation = [1, 2, 3, 4]
+
 directions = [0, 90, 180, 270]
-
-
-# def choose_direction(variant, length):
-#     if variant == 1:
-#         tim.forward(length)
-#     elif variant == 2:
-#         tim.back(length)
-#     elif variant == 3:
-#         tim.left(length)
-#     else:
-#         tim.right(length)
 
 
 for _ in range(100):
