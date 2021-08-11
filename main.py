@@ -7,15 +7,20 @@ screen = t.Screen()
 
 
 ########### Challenge 4 - Random Walk ########
-colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray",
-           "SeaGreen", "brown", "coral", "DarkSalmon", "DeepSkyBlue"]
-
-
 directions = [0, 90, 180, 270]
+t.colormode(255)
 
 
-for _ in range(100):
-    tim.color(rand.choice(colours))
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    random_color = (r, g, b)
+    return random_color
+
+
+for _ in range(50):
+    tim.pencolor(random_color())
     tim.pensize(10)
     tim.speed("fastest")
     tim.forward(30)
